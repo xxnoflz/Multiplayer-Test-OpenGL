@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{afd5d30f-0df7-4fb2-8e7d-2ef992eb4af2}</ProjectGuid>
+    <RootNamespace>MultiplayerTestOpenGL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Libraries\boost_1_80_0\boost_1_80_0\stage\lib;C:\Libraries\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Libraries\boost_1_80_0\boost_1_80_0\stage\lib;C:\Libraries\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Camera\camera.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Entities\basic_entity.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Entities\playable_character.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Entities\player.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Model Parser\ModelParser.cpp" />
+    <ClCompile Include="source\Multiplayer Test\multiplayer_test.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Network\udp_client.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Network\udp_server.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Render\renderer.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Utilities\intersection_solver.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Utilities\model.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Utilities\resource_manager.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Utilities\shader.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_draw.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_stdlib.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_tables.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="source\Multiplayer Test\Vendor\glad.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Multiplayer Test\Camera\camera.h" />
+    <ClInclude Include="source\Multiplayer Test\Entities\basic_entity.h" />
+    <ClInclude Include="source\Multiplayer Test\Entities\playable_character.h" />
+    <ClInclude Include="source\Multiplayer Test\Entities\player.h" />
+    <ClInclude Include="source\Multiplayer Test\Model Parser\ModelParser.h" />
+    <ClInclude Include="source\Multiplayer Test\multiplayer_test.h" />
+    <ClInclude Include="source\Multiplayer Test\Network\udp_client.h" />
+    <ClInclude Include="source\Multiplayer Test\Network\udp_server.h" />
+    <ClInclude Include="source\Multiplayer Test\Render\renderer.h" />
+    <ClInclude Include="source\Multiplayer Test\Utilities\intersection_solver.h" />
+    <ClInclude Include="source\Multiplayer Test\Utilities\model.h" />
+    <ClInclude Include="source\Multiplayer Test\Utilities\resource_manager.h" />
+    <ClInclude Include="source\Multiplayer Test\Utilities\shader.h" />
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imconfig.h" />
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui.h" />
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_impl_glfw.h" />
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_impl_opengl3.h" />
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_internal.h" />
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_stdlib.h" />
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imstb_rectpack.h" />
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imstb_textedit.h" />
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imstb_truetype.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\Multiplayer Test\Shaders\simple_fragment_shader.glsl" />
+    <None Include="source\Multiplayer Test\Shaders\simple_vertex_shader.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

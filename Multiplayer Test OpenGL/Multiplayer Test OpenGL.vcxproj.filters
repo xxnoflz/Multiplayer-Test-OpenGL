@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Multiplayer Test">
+      <UniqueIdentifier>{a0856592-25f2-4537-997e-c78d5ab75424}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Multiplayer Test\Vendor">
+      <UniqueIdentifier>{36434cb3-5fcf-41c3-a816-abc816b68c6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Multiplayer Test\Utilities">
+      <UniqueIdentifier>{4e9f8dfc-7938-4551-81f1-292d46fa09f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Multiplayer Test\Shaders">
+      <UniqueIdentifier>{f14d1ada-8c43-4659-bda4-26796a9925ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Multiplayer Test\Render">
+      <UniqueIdentifier>{1d8fd826-d8ff-44fa-b6ac-3b5d88fbfd25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Multiplayer Test\Camera">
+      <UniqueIdentifier>{c8be2aeb-ed6c-470d-b425-e045abba678f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Multiplayer Test\Vendor\ImGui">
+      <UniqueIdentifier>{63b93567-8f6d-41eb-b533-91956322dcfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Multiplayer Test\Entities">
+      <UniqueIdentifier>{949be23f-784f-4a51-a3bb-cce80c2d4d63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Multiplayer Test\Model Parser">
+      <UniqueIdentifier>{85e709dc-35e2-49f8-b59e-49e8962ff9ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Multiplayer Test\Network">
+      <UniqueIdentifier>{97579861-4539-4d72-b899-da1afae6c3ab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\multiplayer_test.cpp">
+      <Filter>Source Files\Multiplayer Test</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Vendor\glad.c">
+      <Filter>Source Files\Multiplayer Test\Vendor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Utilities\shader.cpp">
+      <Filter>Source Files\Multiplayer Test\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Utilities\resource_manager.cpp">
+      <Filter>Source Files\Multiplayer Test\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Render\renderer.cpp">
+      <Filter>Source Files\Multiplayer Test\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Camera\camera.cpp">
+      <Filter>Source Files\Multiplayer Test\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_impl_glfw.cpp">
+      <Filter>Source Files\Multiplayer Test\Vendor\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_impl_opengl3.cpp">
+      <Filter>Source Files\Multiplayer Test\Vendor\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_tables.cpp">
+      <Filter>Source Files\Multiplayer Test\Vendor\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_widgets.cpp">
+      <Filter>Source Files\Multiplayer Test\Vendor\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui.cpp">
+      <Filter>Source Files\Multiplayer Test\Vendor\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_draw.cpp">
+      <Filter>Source Files\Multiplayer Test\Vendor\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Entities\basic_entity.cpp">
+      <Filter>Source Files\Multiplayer Test\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Entities\playable_character.cpp">
+      <Filter>Source Files\Multiplayer Test\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Utilities\model.cpp">
+      <Filter>Source Files\Multiplayer Test\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Model Parser\ModelParser.cpp">
+      <Filter>Source Files\Multiplayer Test\Model Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Entities\player.cpp">
+      <Filter>Source Files\Multiplayer Test\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_stdlib.cpp">
+      <Filter>Source Files\Multiplayer Test\Vendor\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Network\udp_server.cpp">
+      <Filter>Source Files\Multiplayer Test\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Network\udp_client.cpp">
+      <Filter>Source Files\Multiplayer Test\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Multiplayer Test\Utilities\intersection_solver.cpp">
+      <Filter>Source Files\Multiplayer Test\Utilities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Multiplayer Test\multiplayer_test.h">
+      <Filter>Source Files\Multiplayer Test</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Utilities\shader.h">
+      <Filter>Source Files\Multiplayer Test\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Utilities\resource_manager.h">
+      <Filter>Source Files\Multiplayer Test\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Render\renderer.h">
+      <Filter>Source Files\Multiplayer Test\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Camera\camera.h">
+      <Filter>Source Files\Multiplayer Test\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_impl_glfw.h">
+      <Filter>Source Files\Multiplayer Test\Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_impl_opengl3.h">
+      <Filter>Source Files\Multiplayer Test\Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_impl_opengl3_loader.h">
+      <Filter>Source Files\Multiplayer Test\Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_internal.h">
+      <Filter>Source Files\Multiplayer Test\Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imstb_rectpack.h">
+      <Filter>Source Files\Multiplayer Test\Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imstb_textedit.h">
+      <Filter>Source Files\Multiplayer Test\Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imstb_truetype.h">
+      <Filter>Source Files\Multiplayer Test\Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imconfig.h">
+      <Filter>Source Files\Multiplayer Test\Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui.h">
+      <Filter>Source Files\Multiplayer Test\Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Entities\basic_entity.h">
+      <Filter>Source Files\Multiplayer Test\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Entities\playable_character.h">
+      <Filter>Source Files\Multiplayer Test\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Utilities\model.h">
+      <Filter>Source Files\Multiplayer Test\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Model Parser\ModelParser.h">
+      <Filter>Source Files\Multiplayer Test\Model Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Entities\player.h">
+      <Filter>Source Files\Multiplayer Test\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Vendor\Dear ImGui\imgui_stdlib.h">
+      <Filter>Source Files\Multiplayer Test\Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Network\udp_server.h">
+      <Filter>Source Files\Multiplayer Test\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Network\udp_client.h">
+      <Filter>Source Files\Multiplayer Test\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Multiplayer Test\Utilities\intersection_solver.h">
+      <Filter>Source Files\Multiplayer Test\Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\Multiplayer Test\Shaders\simple_vertex_shader.glsl">
+      <Filter>Source Files\Multiplayer Test\Shaders</Filter>
+    </None>
+    <None Include="source\Multiplayer Test\Shaders\simple_fragment_shader.glsl">
+      <Filter>Source Files\Multiplayer Test\Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
